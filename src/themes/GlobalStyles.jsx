@@ -1,26 +1,26 @@
-import { createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.body};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.user.text};
     font-family: ${({ theme }) => theme.font};
     transition: all 0.50s linear;
   }
 
   a {
-    color: ${({ theme }) => theme.colors.link.text};
+    color: ${({ theme }) => theme.colors.user.text};
     cursor: pointer;
   }
 
   button.btn {
-    background-color: ${({ theme }) => theme.colors.button.background};
-    color: ${({ theme }) => theme.colors.button.text};
+    background-color: ${({ theme }) => theme.colors.user.body};
+    color: ${({ theme }) => theme.colors.user.text};
   }
 
   button.cancel {
     background-color: #ff0000;
-    color: ${({ theme }) => theme.colors.button.text};
+    color: ${({ theme }) => theme.colors.sender.text};
   }
 
   button:disabled {
